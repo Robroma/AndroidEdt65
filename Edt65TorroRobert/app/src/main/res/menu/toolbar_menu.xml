@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/icono1"
+        android:icon="@drawable/ic_baseline_email"
+        android:title="Icono 1"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icono2"
+        android:icon="@drawable/ic_baseline_language"
+        android:title="Icono 2"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/icono3"
+        android:icon="@drawable/ic_baseline_settings"
+        android:title="Icono 3"
+        app:showAsAction="always" />
+
+</menu>

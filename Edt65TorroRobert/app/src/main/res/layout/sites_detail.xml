@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="false"
+            android:layout_marginEnd="16dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rest1" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="Restaurant 1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/itemName"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="City:"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/siteCityDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/itemName"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/city"
+            android:text="Asian"
+            android:textColor="@color/colorNoSeleccionado"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/siteCityDetail"
+
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/cardView"
+            android:text="Price: "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sitePriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/siteCityDetail"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/price"
+            android:text="4/5"
+            android:textColor="@color/colorNoSeleccionado"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemImages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/cardView"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </RelativeLayout>
+</ScrollView>
